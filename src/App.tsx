@@ -8,24 +8,19 @@ import ImageDescription from './components/ImageDescription';
 
 const App: Component = () => {
   return (
-    <div id='App' class='bg-alm'>
+    <div id='App' class='bg-alm scroll-smooth'>
       <Header />
 
-      <div class='anim text-4xl w-screen h-screen fixed 
-                  flex flex-col justify-center text-center
-                  bg-alm text-dnv font-bold hidden'>
-        <h1>We Uphold Your Freedom</h1>
-      </div>
-
-      <section id='hero' class='h-[40vh] bg-slate-800'>
+      <section id='hero' class='h-[40vh] bg-[url("images/6.jpg")] bg-cover bg-center
+                                lg:h-[90vh]'>
         <div class='flex-col text-center'>
-          <h1 class='text-alm text-3xl font-medium pt-[35%]
+          <h1 class='text-alm text-3xl font-medium pt-[35%] lg:pt-[20%]
                      font-arapey tracking-wider pb-6'>
             We Uphold Your Freedom
           </h1>
 
-          <a href='#contact' class='p-2 border-solid border-2 border-white
-                                    text-white rounded-md'> 
+          <a href='#contact' class='p-2 border-solid border-2 border-alm
+                                    text-alm rounded-md'> 
             Find a Lawyer
           </a>
         </div>
