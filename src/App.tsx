@@ -35,7 +35,9 @@ const App: Component = () => {
         </div>
 
         <div class='img h-1/2 w-full'>
-          <img />
+          <For each={Array(7)}>{(a, i) => 
+            <img src={`images/gallery/${i()}.jpg`}/>
+          }</For>
         </div>
       </section>
 
