@@ -16,7 +16,7 @@ const Header: Component = () => {
   return (
     <nav class='header bg-rbl h-[7vh] w-screen fixed z-50 text-white 
                 flex justify-between items-center pr-5'>
-      <img class='' />
+      <img class='invert object-contain h-full pl-4' src='/logo.png' />
       <a onClick={menuVis} class='lg:hidden'>☰</a>
       <div class='container absolute lg:hidden'>
         <ul ref={menu} class='list flex flex-col hidden fixed h-screen p-4 bg-rbl
