@@ -4,7 +4,7 @@ import type { Component } from 'solid-js';
 const Footer: Component = () => {
   return (
     <footer id='footer' class='p-4 pr-6 flex justify-between
-                               text-white bg-rbl'>
+                               text-white bg-rbl lg:px-20'>
       <div>
         <img />
         <p>Copyright 202X</p>

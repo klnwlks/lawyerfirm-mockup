@@ -17,20 +17,27 @@ const Header: Component = () => {
     <nav class='header bg-rbl h-[7vh] w-screen fixed z-50 text-white 
                 flex justify-between items-center pr-5'>
       <img class='' />
-      <a onClick={menuVis}>☰</a>
-      <div class='container absolute'>
+      <a onClick={menuVis} class='lg:hidden'>☰</a>
+      <div class='container absolute lg:hidden'>
         <ul ref={menu} class='list flex flex-col hidden fixed h-screen p-4 bg-rbl
-                              w-[50vw] top-0 text-xl pt-15 transition-transform
-                              transition-duration-200 opacity-0'>
-          <img class='mb-5'/>
+                              w-[50vw] top-0 text-xl pt-15 opacity-0 '>
+          <img class='mb-5 lg:hidden'/>
 
-          <div>
-            <li class='my-4'>Home</li> 
-            <li class='my-4'>About</li>
-            <li class='my-4'>Partners</li> 
-            <li class='my-4'>Contact</li> 
+          <div class='flex flex-col'>
+            <li class='my-4 lg:mx-4'>Home</li> 
+            <li class='my-4 lg:mx-4'>About</li>
+            <li class='my-4 lg:mx-4'>Partners</li> 
+            <li class='my-4 lg:mx-4'>Contact</li> 
           </div>
         </ul>
+      </div>
+
+      {/*could be better but whateveer */}
+      <div class='lg:flex list-none flex-row hidden'>
+        <li class='my-4 lg:mx-4'>Home</li> 
+        <li class='my-4 lg:mx-4'>About</li>
+        <li class='my-4 lg:mx-4'>Partners</li> 
+        <li class='my-4 lg:mx-4'>Contact</li> 
       </div>
     </nav>
   )

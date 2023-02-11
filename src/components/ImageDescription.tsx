@@ -8,7 +8,7 @@ interface IProps {
 
 const ImageDescription: Component<IProps> = (props: IProps) => {
   return (
-    <div class='relative mx-2 flex-none w-full '>
+    <div class='relative mx-2 flex-none w-full lg:flex-1'>
       <img class='object-cover h-full w-full rounded-xl' src={props.img}/>
       <div class='absolute bottom-0 p-4 text-white bg-gradient-to-b
                   from-transparent to-rbl w-full'>
